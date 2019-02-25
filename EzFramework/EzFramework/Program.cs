@@ -1,3 +1,4 @@
+using Fabi.EzFramework;
 using System;
 
 namespace EzFramework
@@ -10,7 +11,7 @@ namespace EzFramework
         /// </summary>
         static void Main(string[] args)
         {
-            using (Game1 game = new Game1())
+            using (Main game = new Main())
             {
                 game.Run();
             }
