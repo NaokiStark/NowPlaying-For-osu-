@@ -21,11 +21,12 @@ namespace Fabi.EzFramework.Tests
 
         public ScreenTest(string screenName) : base(screenName)
         {
-            SpriteFont defaultFont = TextureManager.GetFont("default");
+            SpriteFont defaultFont = TextureManager.GetFont("sniglet");
             btn1 = new Button("btn1") {
                 Caption = "Hello World",
                 FontColor = Color.White,
-                Size = new Vector2(defaultFont.MeasureString("Hello World").X + 20, defaultFont.MeasureString("Hello World").Y + 20)
+                Font = defaultFont,
+                Size = new Vector2(defaultFont.MeasureString("Hello World").X + 20, defaultFont.MeasureString("Hello World").Y + 20),
             };
 
             btn1.OnMouseDown += Btn1_OnMouseDown;
@@ -39,13 +40,14 @@ namespace Fabi.EzFramework.Tests
                 Caption = "uwu",
                 FontColor = Color.White,
                 Visible = true,
+                Font = defaultFont,
                 Opacity = 0,
-                Position = new Vector2(50, 50)
+                Position = new Vector2(50, 50),
             };
 
             Controls.Add(btn1);
             Controls.Add(btn2);
-            Background = TextureManager.GetTexture("background");
+            
         }
 
         private void Btn1_OnMouseMove(object sender, Vector2 mousePosition, MouseButtons mouseButton)

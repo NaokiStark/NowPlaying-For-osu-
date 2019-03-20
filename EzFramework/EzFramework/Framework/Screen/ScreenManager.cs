@@ -19,16 +19,31 @@ namespace Fabi.EzFramework.Framework.Screen
         {
             if (ActualScreen != null)
             {
-                (ActualScreen as AnimationBase).FadeOut(AnimationType.Linear, 300, () =>
+                if(ActualScreen is AnimationBase)
+                {
+                    (ActualScreen as AnimationBase).FadeOut(AnimationType.Linear, 300, () =>
+                    {
+                        ActualScreen = Screen;
+                    });
+                }
+                else
                 {
                     ActualScreen = Screen;
-                });
+                }
             }
             else
-            {
-                Screen.Opacity = 0;
-                ActualScreen = Screen;
-                (Screen as AnimationBase).FadeIn(AnimationType.Linear, 300);
+            {                
+                if(Screen is AnimationBase)
+                {
+                    Screen.Opacity = 0;
+                    ActualScreen = Screen;
+                    (Screen as AnimationBase).FadeIn(AnimationType.Linear, 300);
+                }
+                else
+                {
+                    ActualScreen = Screen;
+                }
+                
             }
 
         }

@@ -252,7 +252,7 @@ namespace Fabi.EzFramework.Framework.UI
         /// <summary>
         /// Object caption || Optional
         /// </summary>
-        public string Caption { get; set; }
+        public virtual string Caption { get; set; }
 
         /// <summary>
         /// Object Font || Optional

@@ -71,6 +71,8 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\App.cs" />
+    <Compile Include="App\Screens\NowPlayingScreen.cs" />
     <Compile Include="Framework\Animations\AnimationAction.cs" />
     <Compile Include="Framework\Animations\AnimationBase.cs" />
     <Compile Include="Framework\Animations\AnimationObject.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Framework\Screen\ScreenManager.cs" />
     <Compile Include="Framework\Texture\TextureManager.cs" />
     <Compile Include="Framework\UI\Controls\Button.cs" />
+    <Compile Include="Framework\UI\Controls\Label.cs" />
     <Compile Include="Framework\UI\IUIObject.cs" />
     <Compile Include="Framework\UI\UIObjectBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -5,19 +5,25 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzFramework", "EzFramework\EzFramework\EzFramework.csproj", "{FB56763E-F447-4801-9798-6AB96CD45A9A}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "EzFrameworkContent", "EzFramework\EzFrameworkContent\EzFrameworkContent.contentproj", "{687AAD00-59EA-4B29-88A9-2BDDBB4AE2AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EzFrameworkContent", "EzFramework\EzFrameworkContent\EzFrameworkContent.contentproj", "{687AAD00-59EA-4B29-88A9-2BDDBB4AE2AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB56763E-F447-4801-9798-6AB96CD45A9A}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{FB56763E-F447-4801-9798-6AB96CD45A9A}.Debug|x86.ActiveCfg = Debug|x86
 		{FB56763E-F447-4801-9798-6AB96CD45A9A}.Debug|x86.Build.0 = Debug|x86
+		{FB56763E-F447-4801-9798-6AB96CD45A9A}.Release|Any CPU.ActiveCfg = Release|x86
 		{FB56763E-F447-4801-9798-6AB96CD45A9A}.Release|x86.ActiveCfg = Release|x86
 		{FB56763E-F447-4801-9798-6AB96CD45A9A}.Release|x86.Build.0 = Release|x86
+		{687AAD00-59EA-4B29-88A9-2BDDBB4AE2AF}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{687AAD00-59EA-4B29-88A9-2BDDBB4AE2AF}.Debug|x86.ActiveCfg = Debug|x86
+		{687AAD00-59EA-4B29-88A9-2BDDBB4AE2AF}.Release|Any CPU.ActiveCfg = Release|x86
 		{687AAD00-59EA-4B29-88A9-2BDDBB4AE2AF}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
